@@ -1,0 +1,277 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+section{
+  font-style: italic;
+  color: white;
+  background: rgb(255,105,11);
+background: linear-gradient(90deg,rgba(253, 0, 0, 0.575) 12%, rgba(243, 4, 4, 0.596) 90%, rgba(255,1,1,0) 100%, rgba(252,0,0,0) 100%);
+  height: 630vh;
+
+}
+.navBg{
+  background: rgb(255, 11, 11);
+  background: linear-gradient(90deg, rgba(36,0,0,1) 12%, rgba(255,0,0,1) 88%, rgba(255,1,1,0) 100%, rgba(253,4,4,0) 100%);
+}
+
+/***********************************Footer*************************************/
+.abajo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.bodyfooter{
+  background-color: aqua;
+}
+/***********************************MEnu*************************************/
+.bodymenu{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.card-img {
+  height: 20rem ;
+  width: 20rem; /* Ajusta esta altura según tus necesidades /* Asegura que la imagen cubra el área especificada sin distorsionarse */
+}
+.pollos{
+  margin: 100px 90px;
+  text-align: center;
+}
+.Baldes{
+  margin: 100px 90px;
+  text-align: center;
+}
+.Hamburguesa{
+  margin: 100px 40px;
+  text-align: center;
+}
+.Ensaladas{
+  margin: 100px 50px;
+  text-align: center;
+}
+.Postre{
+  margin: 100px 90px;
+  text-align: center;
+}
+.Wraps{
+  margin: 100px 90px;
+  text-align: center;
+}
+/************************carusel*************************/
+.carousel-item{
+  color: black;
+}
+/*****************************************for********************/
+.formulario2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formulario {
+  width: 300px; 
+  height: 550px;
+  background: rgb(11, 28, 43);
+  padding: 30px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 5px;
+  font-family: 'calibri';
+  color: aliceblue;
+  box-shadow: 5px 10px 20px #000;
+}
+
+.formulario h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.controles {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  font-family: 'calibri';
+  font-size: 17px;
+}
+
+.formulario p {
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.formulario a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.formulario a:hover {
+  color: rgb(252, 231, 161);
+  text-decoration: underline;
+}
+
+.formulario .botones {
+  width: 100%;
+  background: rgb(252, 231, 161);
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+}
+/**************Acerca*****************/
+.acerca {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.acerca h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.acerca h2 {
+  color: #495057;
+  margin-top: 20px;
+}
+
+.acerca p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c757d;
+}
+/**************************imagenes wasas********************/
+
+.bodySocios {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  margin: 20rem; /* Añade una unidad de medida (ejemplo: 1rem) */
+  padding: 10rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(20, 20, 20, 1);
+}
+
+.imgSocios {
+  width: 80%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 1000ms;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+figure::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 80%; /* Reduce el tamaño horizontal */
+  height: 80%; /* Reduce el tamaño vertical */
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 200ms;
+  border-radius: 40%; /* Ajusta el radio del borde para hacer más pequeña la barra */
+}
+
+figcaption {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el texto */
+  width: 60%; /* Ajusta el tamaño */
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
+  opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  figcaption {
+    transform: translate3d(0, 2rem, 0);
+  }
+
+  figure::after {
+    opacity: 1;
+    transform: scale(0.8); /* Reducir el tamaño inicial */
+    transition: transform 900ms;
+  }
+
+  a:is(:hover, :focus) figure::after {
+    transform: scale(1.5); /* Ajusta el tamaño al hacer hover */
+  }
+
+  a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
+  }
+
+  a:is(:hover, :focus) .imgSocios {
+    transform: scale(1.2);
+  }
+}
